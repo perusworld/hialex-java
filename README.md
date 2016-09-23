@@ -21,6 +21,11 @@ git push heroku master
 ```
 This will push , start the app and show you the url at which the app can be accessed, note the url.
 
+You can tail the server logs using the following command
+```bash
+heroku logs --tail
+```
+
 ### Alexa Skills Kit
 Configure a new alexa skill, at the interaction model page use the following for this example
 
