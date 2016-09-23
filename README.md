@@ -87,7 +87,11 @@ For the Certification Endpoint configuration select the option **My development 
 You can test the flow at the Test page under **Service Simulator**
 
 Use the following to test the 3 intents configured 
+
 1. hi (should return you Welcome)
-2. i am peru (should return Welcome Peru)
-3. add twelve and thirteen (should return The sum of the two numbers are 25)
+
+1. i am peru (should return Welcome Peru)
+
+1. add twelve and thirteen (should return The sum of the two numbers are 25)
+
 
