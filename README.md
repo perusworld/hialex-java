@@ -13,7 +13,7 @@ run the following to create an app on heroku
 ```bash
 heroku create hialex-java
 ```
-Replace hialex-java with something you like
+Replace **hialex-java** with something you like
 
 then run the following to push to heroku repo
 ```bash
@@ -58,5 +58,36 @@ Configure a new alexa skill, at the interaction model page use the following for
 }
 ```
 
+#### Sample Utterances
+```text
+Hello Hello
+Hello Hi
+Hello Hi There
+Hello What's Up
+Hello Howdy
+
+HelloMe I am {Who}
+HelloMe This is {Who}
+
+Add Add {NumberA} and {NumberB}
+Add Sum {NumberA} and {NumberB}
+```
+
+### Endpoint Configuration
+At the configuration page, select **https** endpoint type, select the region where the heroku app is running and enter the url you got when you pushed the heroku app, append **/hialex** to the url
+
+```text
+example - https://hialex-java.herokuapp.com/hialex
+```
+
+### SSL Configuration
+For the Certification Endpoint configuration select the option **My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority**
 
 ### Test
+You can test the flow at the Test page under **Service Simulator**
+
+Use the following to test the 3 intents configured 
+1. hi (should return you Welcome)
+2. i am peru (should return Welcome Peru)
+3. add twelve and thirteen (should return The sum of the two numbers are 25)
+
